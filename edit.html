@@ -12,11 +12,29 @@
 
 <body>
     <div>
-        <h1>여기는 이제 선택한 항목 수정 할 수 있는 페이지</h1>
+        <h2>Edit page</h2>
+        <form action="/action_page.php">
+            <label for="number">number:</label><br>
+            <input type="text" id="number" number="number" value="1"><br>
+            <label for="level">level:</label><br>
+            <input type="text" id="level" level="level" value="*"><br><br>
+            <label for="word">word:</label><br>
+            <input type="text" id="word" word="word" value="apple"><br><br>
+            <label for="meaning">meaning:</label><br>
+            <input type="text" id="meaning" meaning="meaning" value="사과"><br><br> 
+            
+            <button onclick="javascript:btn()"> 수정 </button>
+          </form> 
 
-        <textarea rows="5" cols="40"></textarea><button>수정완</button>
+        
     </div>
     <button onclick="window.location.href = 'index.html';">메인페이지 돌아가기</button>
 </body>
 
 </html>
+
+<script>
+    function btn(){
+        alert('게시물을 수정할까요?');
+    }
+    </script>
