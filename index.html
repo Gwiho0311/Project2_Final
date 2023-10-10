@@ -2,6 +2,32 @@
 <!doctype html>
 <html lang="en">
   <head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Custom styles에서 추가적인 CSS를 작성 -->
+<style>
+  /* 작은 화면에 대한 스타일 조정 */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+    }
+    .search {
+      width: 100%;
+    }
+    /* 다른 요소에 대한 스타일 조정 */
+  }
+
+  /* 중간 크기 화면에 대한 스타일 조정 */
+  @media (min-width: 768px) and (max-width: 992px) {
+    /* 필요한 스타일 추가 */
+  }
+
+  /* 큰 화면에 대한 스타일 조정 */
+  @media (min-width: 992px) {
+    /* 필요한 스타일 추가 */
+  }
+</style>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <meta charset="utf-8">
    
@@ -99,119 +125,145 @@ img {
             <tr>
               <td>10</td>
               <td>***</td>
-              <td>superintendent</td>
+              <td><a href="view.html?word=superintendent">superintendent</a></td>
               <td>관리자, 감독관</td>
               <td>2023. 10. 09.</td>
-              <td><button onclick="location.href='view.html'">view</button >
-                <button onclick="location.href='edit.html'">edit</button ></td></td>
+              <td>
+                <button onclick="location.href='edit.html'">edit</button>
+                <button onclick="location.href='edit.html'">delete</button>
+              </td>
             </tr>
             <tr>
               <td>9</td>
               <td>*</td>
-              <td>persistent</td>
+              <td><a href="view.html?word=persistent">persistent</a></td>
               <td>끊임없는, 게속되는</td>
               <td>2023. 10. 09.</td>
-              <td><button onclick="location.href='view.html'">view</button >
-                <button onclick="location.href='edit.html'">edit</button ></td></td>
+              <td>
+                <button onclick="location.href='edit.html'">edit</button >
+                <button onclick="location.href='edit.html'">delete</button></td>
+                
             </tr>
             <tr>
               <td>8</td>
               <td>**</td>
-              <td>maintenance</td>
+              <td><a href="view.html?word=maintenance">maintenance</a></td>
               <td>유지보수</td>
               <td>2023. 10. 09.</td>
-              <td><button onclick="location.href='view.html'">view</button >
-                <button onclick="location.href='edit.html'">edit</button ></td></td>
+              <td>
+                <button onclick="location.href='edit.html'">edit</button >
+                <button onclick="location.href='edit.html'">delete</button></td>
+                
             </tr>
             <tr>
               <td>5</td>
               <td>**</td>
-              <td>accuse</td>
+              <td><a href="view.html?word=accuse">accuse</a></td>
               <td>비난하다, 고소하다</td>
               <td>2023. 10. 09.</td>
-              <td><button onclick="location.href='view.html'">view</button >
-                <button onclick="location.href='edit.html'">edit</button ></td></td>
+              <td>
+                <button onclick="location.href='edit.html'">edit</button >
+                  <button onclick="location.href='edit.html'">delete</button>
+                </td>
             </tr>
             <tr>
               <td>4</td>
               <td>*</td>
-              <td>electric</td>
+              <td><a href="view.html?word=electric">electric</a></td>
               <td>전기의, 전기를 생산하는</td>
               <td>2023. 10. 09.</td>
-              <td><button onclick="location.href='view.html'">view</button >
-                <button onclick="location.href='edit.html'">edit</button ></td></td>
+              <td>
+                <button onclick="location.href='edit.html'">edit</button >
+                  <button onclick="location.href='edit.html'">delete</button>
+                </td>
             </tr>
             <tr>
               <td>3</td>
               <td>***</td>
-              <td>probationary</td>
+              <td><a href="view.html?word=probationary">probationary</a></td>
               <td>견습중의, 가채용의</td>
               <td>2023. 10. 09.</td>
-              <td><button onclick="location.href='view.html'">view</button >
-                <button onclick="location.href='edit.html'">edit</button ></td></td>
+              <td>
+                <button onclick="location.href='edit.html'">edit</button >
+                  <button onclick="location.href='edit.html'">delete</button>
+                </td>
             </tr>
             <tr>
               <td>2</td>
               <td>*</td>
-              <td>indicate</td>
+              <td><a href="view.html?word=indicate">indicate</a></td>
               <td>나타내다, 보여주다</td>
               <td>2023. 10. 09.</td>
-              <td><button onclick="location.href='view.html'">view</button >
-                <button onclick="location.href='edit.html'">edit</button ></td></td>
+              <td>
+                <button onclick="location.href='edit.html'">edit</button >
+                  <button onclick="location.href='edit.html'">delete</button>
+                </td>
             </tr>
             <tr>
               <td>1</td>
               <td>*</td>
-              <td>legitimate</td>
+              <td><a href="view.html?word=legitimate">legitimate</a></td>
               <td>합법적인, 적법한</td>
               <td>2023. 10. 09.</td>
-              <td><button onclick="location.href='view.html'">view</button >
-                <button onclick="location.href='edit.html'">edit</button ></td></td>
+              <td>
+                <button onclick="location.href='edit.html'">edit</button >
+                  <button onclick="location.href='edit.html'">delete</button>
+                </td>
             </tr>
             <tr>
               <td>11</td>
               <td>*</td>
-              <td>pole</td>
+              <td><a href="view.html?word=pole">pole</a></td>
               <td>기둥, 장대</td>
               <td>2023. 10. 09.</td>
-              <td><button onclick="location.href='view.html'">view</button >
-                <button onclick="location.href='edit.html'">edit</button ></td></td>
+              <td>
+                <button onclick="location.href='edit.html'">edit</button >
+                  <button onclick="location.href='edit.html'">delete</button>
+                </td>
             </tr>
             <tr>
               <td>13</td>
               <td>*</td>
-              <td>transfer</td>
+              <td><a href="view.html?word=transfer">transfer</a></td>
               <td>옮기다, 이동하다</td>
               <td>2023. 10. 09.</td>
-              <td><button onclick="location.href='view.html'">view</button >
-                <button onclick="location.href='edit.html'">edit</button ></td></td>
+              <td>
+                <button onclick="location.href='edit.html'">edit</button >
+                  <button onclick="location.href='edit.html'">delete</button>
+                </td>
             </tr>
             <tr>
               <td>14</td>
               <td>*</td>
-              <td>assure</td>
+              <td><a href="view.html?word=assure">assure</a></td>
               <td>안심시키다, 확신시키다</td>
               <td>2023. 10. 10.</td>
-              <td><button onclick="location.href='view.html'">view</button >
-                <button onclick="location.href='edit.html'">edit</button ></td>
+              <td>
+                <button onclick="location.href='edit.html'">edit</button >
+                  <button onclick="location.href='edit.html'">delete</button>
+                </td>
             </tr>
             <tr>
               <td>15</td>
               <td>**</td>
-              <td>embarrassment</td>
+              <td><a href="view.html?word=embarrassment">embarrassment</a></td>
               <td>당황, 난처함</td>
               <td>2023. 10. 10.</td>
-              <td><button onclick="location.href='view.html'">view</button >
-                <button onclick="location.href='view.html'">edit</button ></td></td>
+              <td>
+                <button onclick="location.href='view.html'">edit</button >
+                  <button onclick="location.href='edit.html'">delete</button>
+                </td>
             </tr>
             <tr>
               <td>16</td>
               <td>**</td>
-              <td>utility</td>
+              <td><a href="view.html?word=utility">utility</a></td>
               <td>공익사업(체), 유용성</td>
               <td>2023. 10. 10.</td>
-              <td><button onclick="location.href='view.html'">view</button >
-                <button onclick="location.href='view.html'">edit</button ></td></td>
+              <td>
+                <button onclick="location.href='view.html'">edit</button >
+                  <button onclick="location.href='edit.html'">delete</button>
+                </td>
             </tr>
             
             
