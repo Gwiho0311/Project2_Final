@@ -54,9 +54,27 @@
   
         // 입력된 값 가져오기
         var number = document.getElementById("number").value;
+        var number = document.getElementById("number").value;
+        if (isNaN(number)) {
+            alert("숫자만 입력 가능합니다.");
+            return;
+        }
+
         var level = document.getElementById("level").value;
+        if (level !=  "*" && level != "**" && level != "***") {
+            alert("*로 level을 표시해주세요.");
+            return;
+        }
         var word = document.getElementById("word").value;
+        if (typeof word != 'string') {
+            alert("문자만 입력 가능합니다.");
+            return;
+        }
         var meaning = document.getElementById("meaning").value;
+        if (typeof meaning != 'string') {
+            alert("문자만 입력 가능합니다.");
+            return;
+        }
         var date = new Date().toLocaleDateString(); // 현재 날짜 가져오기
 
         alert("게시물이 추가됩니다");
