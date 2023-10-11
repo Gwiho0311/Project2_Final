@@ -23,7 +23,7 @@
             <label for="meaning">meaning:</label><br>
             <input type="text" id="meaning" meaning="meaning" value="사과"><br><br> 
             
-            <button onclick="javascript:btn()"> 수정 </button>
+            <button>수정</button>
           </form> 
 
         
@@ -53,7 +53,7 @@
             return;
         }
         var word = document.getElementById("word").value;
-        if (typeof word != String) {
+        if (typeof word != "string") {
             alert("문자만 입력 가능합니다.");
             return;
         }
@@ -64,14 +64,9 @@
         }
         var date = new Date().toLocaleDateString(); // 현재 날짜 가져오기
   
-        
+        alert('게시물을 수정할까요?');
 
       });
     });
   </script>
 
-<script>
-    function btn(){
-        alert('게시물을 수정할까요?');
-    }
-    </script>
