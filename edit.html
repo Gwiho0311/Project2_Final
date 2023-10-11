@@ -34,6 +34,43 @@
 </html>
 
 <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var addButton = document.querySelector("button");
+      addButton.addEventListener("click", function (event) {
+        event.preventDefault();
+  
+        // 입력된 값 가져오기
+        var number = document.getElementById("number").value;
+        var number = document.getElementById("number").value;
+        if (isNaN(number)) {
+            alert("숫자만 입력 가능합니다.");
+            return;
+        }
+
+        var level = document.getElementById("level").value;
+        if (level !=  "*" && level != "**" && level != "***") {
+            alert("*로 level을 표시해주세요.");
+            return;
+        }
+        var word = document.getElementById("word").value;
+        if (typeof word != String) {
+            alert("문자만 입력 가능합니다.");
+            return;
+        }
+        var meaning = document.getElementById("meaning").value;
+        if (typeof meaning != String) {
+            alert("문자만 입력 가능합니다.");
+            return;
+        }
+        var date = new Date().toLocaleDateString(); // 현재 날짜 가져오기
+  
+        
+
+      });
+    });
+  </script>
+
+<script>
     function btn(){
         alert('게시물을 수정할까요?');
     }
