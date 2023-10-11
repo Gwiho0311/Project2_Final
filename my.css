@@ -1,52 +1,54 @@
-/* 작은 화면에 대한 스타일 조정 */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 24px;
-  }
-  .box {
-    padding: 10px;
-  }
-  .box button {
-    width: 100%;
-  }
+/* 기본 스타일 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  /* 네비게이션 버튼 스타일 조정 */
-  .btn-group button, .btn-group button:active, .btn-group button:focus {
-    font-size: 12px;
-  }
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
 
-  /* 검색 입력 필드 스타일 조정 */
-  .search input {
-    width: 100%;
-    font-size: 14px;
-    padding: 10px 12px;
-    border: 1px solid #bbb;
-    border-radius: 8px;
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* 스마트폰 미디어 쿼리 */
+@media (max-width: 600px) {
+  header {
+      padding: 10px;
+  }
+  header h1 {
+      font-size: 24px;
+  }
+  nav ul {
+      text-align: center;
+      padding-top: 10px;
+  }
+  nav ul li {
+      display: block;
+      margin: 10px 0;
   }
 }
 
-/* 중간 크기 화면에 대한 스타일 조정 (필요한 경우) */
-@media (min-width: 768px) and (max-width: 992px) {
-  /* 중간 크기 화면에 대한 스타일 추가 */
-}
-
-/* 큰 화면에 대한 스타일 조정 (필요한 경우) */
-@media (min-width: 992px) {
-  /* 큰 화면에 대한 스타일 추가 */
-
-  /* 네비게이션 버튼 스타일 조정 */
-  .btn-group button, .btn-group button:active, .btn-group button:focus {
-    font-size: 14px;
-  }
-
-  /* 검색 입력 필드 스타일 조정 */
-  .search input {
-    width: 150px;
-    font-size: 14px;
-    padding: 10px 12px;
-    border: 1px solid #bbb;
-    border-radius: 8px;
-  }
-}
-
-
+/* 추가적인 미디어 쿼리 및 스타일은 필요에 따라 추가할 수 있습니다. */
