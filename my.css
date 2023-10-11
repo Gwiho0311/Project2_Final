@@ -27,14 +27,14 @@ main {
 }
 
 footer {
-  background-color: #333;
+  background-color: #7bc6e4;
   color: #fff;
   text-align: center;
   padding: 10px;
 }
 
-/* 스마트폰 미디어 쿼리 */
-@media (max-width: 600px) {
+/* 스마트폰 */
+@media (max-width: 500px) {
   header {
       padding: 10px;
   }
@@ -51,4 +51,4 @@ footer {
   }
 }
 
-/* 추가적인 미디어 쿼리 및 스타일은 필요에 따라 추가할 수 있습니다. */
+
