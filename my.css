@@ -34,7 +34,7 @@ footer {
 }
 
 /* 스마트폰 */
-@media (max-width: 500px) {
+@media (max-width: 100%) {
   header {
       padding: 10px;
   }
